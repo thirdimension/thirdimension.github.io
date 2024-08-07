@@ -3632,6 +3632,43 @@ input, select, textarea {
     gap: 1em;
 }
 
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    line-height: 1.75;
+    color: #646464;
+}
+
+h2, h3 {
+    color: #3c3b3b;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0 1em;
+}
+
 .book-grid article {
     background: #fff;
     border: 1px solid #ddd;
@@ -3640,6 +3677,7 @@ input, select, textarea {
     width: calc(33.333% - 1em);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .book-grid article:hover {
@@ -3690,7 +3728,6 @@ input, select, textarea {
     }
 }
 
-}
 
 
 		}
