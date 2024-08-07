@@ -3625,14 +3625,9 @@ input, select, textarea {
     object-fit: cover;
     max-height: 400px; /* Adjust this value as needed */
 
-	.book-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1em;
 }
 
-/* Reset and basic styles */
+/* Basic styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -3727,7 +3722,6 @@ p {
         width: 100%;
     }
 }
-
 
 
 		}
