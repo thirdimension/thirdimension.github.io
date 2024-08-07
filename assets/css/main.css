@@ -1,3 +1,4 @@
+@ -1,3629 +1,3695 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
 
@@ -3624,7 +3625,72 @@ input, select, textarea {
     height: auto;
     object-fit: cover;
     max-height: 400px; /* Adjust this value as needed */
+
+	.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.book-grid article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: calc(33.333% - 1em);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.book-grid article:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-grid .image {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.book-grid .responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-grid h3 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.book-grid p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.book-grid p a {
+    color: #2ebaae;
+    text-decoration: none;
+}
+
+.book-grid p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 980px) {
+    .book-grid article {
+        width: calc(50% - 1em);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .book-grid article {
+        width: 100%;
+    }
+}
+
 }
 
 
-		}
