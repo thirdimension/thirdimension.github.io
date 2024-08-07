@@ -27,6 +27,160 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+/* Global Styles */
+body {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding-top: 4em;
+    color: #646464;
+    line-height: 1.75;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #3c3b3b;
+}
+
+/* Header Styles */
+header {
+    background: #fff;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #646464;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #2ebaae;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/* Book Grid Styles */
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+.book-grid article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: calc(33.333% - 1em);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.book-grid article:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-grid .image {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.book-grid .responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-grid h3 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.book-grid p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.book-grid p a {
+    color: #2ebaae;
+    text-decoration: none;
+}
+
+.book-grid p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 980px) {
+    .book-grid article {
+        width: calc(50% - 1em);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .book-grid article {
+        width: 100%;
+    }
+}
+
 body {
     line-height: 1;
 }
