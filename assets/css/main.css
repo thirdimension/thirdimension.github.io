@@ -3616,4 +3616,15 @@ input, select, textarea {
 				padding: 1.5em;
 			}
 
+			/* Your existing CSS content... */
+
+/* Add this at the end of the CSS file */
+.featured-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px; /* Adjust this value as needed */
+}
+
+
 		}
